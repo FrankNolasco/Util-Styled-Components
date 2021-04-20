@@ -16,3 +16,8 @@ export interface IFlex {
     grow? : boolean,
     responsiveReorder? : boolean
 }
+
+export interface IGrid {
+    cols : number;
+    gap : number;
+}
