@@ -19,5 +19,5 @@ export interface IFlex {
 
 export interface IGrid {
     cols : number;
-    gap : number;
+    gap : number | string;
 }
