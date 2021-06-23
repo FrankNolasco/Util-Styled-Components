@@ -1,5 +1,6 @@
 import { Grid } from "./components/Grid";
 import { Column, Flex, Row, RowWrap } from "./components/Flex";
-import { Button, Div, H1, H2, H3, H4, H5, H6 } from "./components/Overrides";
+import { Button, Div  } from "./components/Overrides";
+import { Heading, Typography } from './components/Labels'
 
-export { Flex, Column, Row, RowWrap, Button, Div, H1, H2, H3, H4, H5, H6, Grid };
+export { Flex, Column, Row, RowWrap, Button, Div, Grid };
