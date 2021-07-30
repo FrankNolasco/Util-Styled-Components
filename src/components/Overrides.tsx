@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IOverrideDiv, IOverrideHeading } from '../types/Interfaces'
+import { IOverrideDiv } from '../types/Interfaces'
 
 // const recalculate = (width) => {
 //     let extension = width ? width.substr(width.length-1,width.length) : "$";

@@ -19,8 +19,9 @@ export interface IFlex extends IStyled {
     grow? : boolean,
     responsiveReorder? : boolean
 }
-export interface IGrid extends IStyled {
-    cols : number;
+export interface IGrid extends IOverrideDiv {
+    cols? : number; // if cols is undefined childWidth must be defined
+    childWidth? : string | number; // if childWidth is undefined cols must be defined
     gap? : number | string;
 }
 export type T_Heading = "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
