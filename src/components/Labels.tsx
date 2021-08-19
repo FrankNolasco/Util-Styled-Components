@@ -16,12 +16,14 @@ const calcularFontSize = (variant?: T_Typografy | T_Heading) => {
 
 export const Heading = styled.h1<IHeading>`
   font-weight: bold;
-  font-size: ${(props) => calcularFontSize(props.variant)};
+  font-size: ${(props: IHeading) => calcularFontSize(props.variant)};
   font-family: ${(props) => props.theme.fontFamily};
-  color: ${(props) => props.theme.colorText};
+  color: ${(props) => props.theme.textColor};
+  margin: 0;
+  padding: 0;
 `;
 
 export const Typography = styled.span<ITypografy>`
-  color: ${(props) => props.theme.colorText};
-  font-size: ${(props) => calcularFontSize(props.variant)};
+  color: ${(props) => props.theme.textColor};
+  font-size: ${(props: ITypografy) => calcularFontSize(props.variant)};
 `;
